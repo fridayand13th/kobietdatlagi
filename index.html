@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web lmao so 2</title>
+    <link rel="stylesheet" href="./et.css">
+</head>
+<body>
+    <div id="main">
+        <div id="nut1" class="te marg" onclick="monut2()">
+            <span>Click here!</span>
+        </div>
+        <div id="nut2" class="te marg" onclick="monut3()">
+            <span>Click here!</span>
+        </div>
+        <div id="nut3" class="te marg" onclick="mosidecontent()">
+            <span>Click here!</span>
+        </div>
+        <div id="sidecontent">
+            <div id="modau1" class="te">
+                <h1>Có mỗi cái nút mà bấm mãi mới được. </h1> <br>
+                <h1> Bấm lại đi xem nào!</h1>
+            </div>
+            <div id="nut4" class="te" onclick="momaincontent()">
+                <span>Click here!</span>
+            </div>
+            <div id="maincontent">
+                <div id="nutdong" onclick="dong()">
+                    <span>X</span>
+                </div>
+                <div class="ten t1">
+                    <h1>MINH</h1>
+                </div>
+                <div class="avatar">
+                    <img src="./anhotvovan2/emt2.jpg" alt="" class="anhcv">
+                </div>
+                <div class="ten t2">
+                    <h1>THẮNG</h1>
+                </div>
+                <div class="chucmung">
+                    <p>Vậy là em Thắng đã đi qua 20 cái nồi bánh chưng rồi!<br>
+                    Chúc em Thắng tuổi mới vui vẻ, hạnh phúc bên người em yêu.<br> Kiếm được nhiều tiền thi thoảng bao em Mạnh đi ăn.<br>
+                    Từ thằng bạn em thắng Bỏ rơi.</p>
+                </div>
+                <div class="phaohoa">
+                    <img src="./anhotvovan2/phao1.gif" alt="" class="phao">
+                </div>
+                <div class="meoo">
+                    <img src="./anhotvovan2/meo1.gif" alt="" class="me">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script>
+    function monut2() {
+      document.getElementById("nut2").style.display = "flex";
+      document.getElementById("nut1").style.display = "none";
+    }
+</script>
+<script>   
+    function monut3(){
+        document.getElementById("nut3").style.display = "flex";
+        document.getElementById("nut2").style.display = "none";
+    }
+    function mosidecontent(){
+      document.getElementById("nut3").style.display = "none";
+      document.getElementById("sidecontent").style.display = "flex";
+    }
+    function dong(){
+        document.getElementById("nut1").style.display = "inline-flex";
+        document.getElementById("sidecontent").style.display = "none";
+        document.getElementById("maincontent").style.display = "none";
+        document.getElementById("modau1").style.display ="flex";
+    }
+    function momaincontent(){
+      
+      document.getElementById("maincontent").style.display = "flex";
+      document.getElementById("modau1").style.display ="none";
+    }
+   </script>
+</html>
